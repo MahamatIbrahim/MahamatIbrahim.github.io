@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -6,17 +6,30 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     height: 100vh;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
     background: #06283D;
 }
 
-.container{
+.map {
+    position: absolute;
+    font-family: verdana;
+    font-size: 14px;
+    width: 30%;
+    height: 590px;
+    margin-top: 19px;
+    margin-bottom: 0px;
+    margin-left: 650px;
+    border-radius: 10px;
+}
+
+.container {
     position: relative;
-    width: 400px;
+    width: 30%;
     height: 105px;
     background: #fff;
     padding: 28px 32px;
@@ -24,6 +37,7 @@ body{
     border-radius: 18px;
     font-family: 'Roboto', sans-serif;
     transition: 0.6s ease-out;
+    margin-right: 650px;
 }
 
 .search-box{
@@ -80,6 +94,7 @@ body{
     width: 35%;
     margin-top: 15px;
 }
+
 
 .weather-box .temperature{
     position: relative;
@@ -183,10 +198,3 @@ body{
     }
 }
 
-#mapid {
-    width: 100%; /* La carte occupe la totalité de la largeur du conteneur */
-    height: 300px; /* Ajustez la hauteur de la carte selon vos besoins */
-    margin-top: 10px;
-  
-  
-  }

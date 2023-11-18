@@ -2,7 +2,8 @@ const container = document.querySelector(".container");
 const search = document.querySelector(".search-box button");
 const weatherBox = document.querySelector(".weather-box");
 const weatherDetails = document.querySelector(".weather-details");
-const error404 = document.querySelector(".not-found");
+const ecoute = document.querySelector("input");
+
 let inputVal;
 let marker;
 
@@ -38,7 +39,6 @@ async function fetchWeatherData(url) {
   }
 }
 
-const ecoute = document.querySelector("input");
 ecoute.addEventListener("keyup", function (event) {
   if (event.keyCode === 13) {
     if (ecoute.value.length) {
@@ -50,8 +50,7 @@ ecoute.addEventListener("keyup", function (event) {
 
 ///////////////////////////// display input
 
-const menu = document.querySelector("button");
-menu.addEventListener("click", function () {
+search.addEventListener("click", function () {
   inputVal = document.querySelector("input").value;
   const url = `https://www.prevision-meteo.ch/services/json/${inputVal}`;
   fetchWeatherData(url);
