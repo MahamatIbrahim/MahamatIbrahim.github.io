@@ -19,8 +19,8 @@ body {
     position: absolute;
     font-family: verdana;
     font-size: 14px;
-    width: 30%;
-    height: 590px;
+    width: 25%;
+    height: 500px;
     margin-top: 19px;
     margin-bottom: 0px;
     margin-left: 650px;
@@ -29,7 +29,7 @@ body {
 
 .container {
     position: relative;
-    width: 30%;
+    width: 25%;
     height: 105px;
     background: #fff;
     padding: 28px 32px;
