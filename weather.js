@@ -32,7 +32,7 @@ async function fetchWeatherData(url) {
     weatherDetails.style.display = "";
     weatherBox.classList.add("fadeIn");
     weatherDetails.classList.add("fadeIn");
-    container.style.height = "500px";
+    container.style.height = "590px";
   } catch (error) {
     console.error("Erreur lors de la récupération des données : " + error);
     //document.getElementById("meteo").textContent = "errr";
