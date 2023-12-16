@@ -29,15 +29,6 @@ body {
 
 }
 
-.main {
-
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-}
-
 .search-box{
     width: 100%;
     height: min-content;
@@ -116,7 +107,7 @@ body {
     text-transform: capitalize;
 }
 
-.map {
+#mapid {
     width: 100%;
     display: flex;
     font-family: verdana;
