@@ -107,7 +107,7 @@ body {
     text-transform: capitalize;
 }
 
-#mapid {
+.map {
     width: 100%;
     display: flex;
     font-family: verdana;
