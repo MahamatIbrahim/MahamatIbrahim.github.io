@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     border: 0;
@@ -6,41 +6,56 @@
     box-sizing: border-box;
 }
 
-body {
+body{
     height: 100vh;
     display: flex;
-    flex-direction: column; /* Adjust the flex direction to column */
+    align-items: center;
+    justify-content: center;
     background: #06283D;
 }
 
-
-
-.heading {
-    text-align: center;
-    color: #fff;
-    padding: 10px;
-    background: #06283D;
-    margin-top: 30px;
-    font-weight: bold;
-    font-size: 4rem;
-    letter-spacing: 0.02em;
-
+.search-bar {
+    position: fixed;
+    top: 20px;  /* Un petit écart du haut */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
 }
 
 .container {
+    margin-top: 180px;  /* Compense la hauteur de la barre de recherche fixe */
     position: relative;
     width: 400px;
-    height: 105px;
     background: #fff;
     padding: 28px 32px;
     overflow: hidden;
     border-radius: 18px;
     font-family: 'Roboto', sans-serif;
     transition: 0.6s ease-out;
-  
-    /* your existing container styles */
-    margin: auto; /* Center the container horizontally */
 }
+
+
+
+.map-container {
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+
 
 .search-box{
     width: 100%;
@@ -77,7 +92,7 @@ body {
     transition: 0.4s ease;
 }
 
-.search-box button:hover{  
+.search-box button:hover{
     color: #fff;
     background: #06283D;
 }
@@ -93,10 +108,9 @@ body {
 }
 
 .weather-box img{
-    width: 35%;
-    margin-top: 7px;
+    width: 60%;
+    margin-top: 30px;
 }
-
 
 .weather-box .temperature{
     position: relative;
@@ -119,16 +133,6 @@ body {
     font-weight: 500;
     text-transform: capitalize;
 }
-
-.map {
-    width: 100%;
-    display: flex;
-    font-family: verdana;
-    font-size: 14px;
-    height: 20%;
-    border-radius: 10px;
-}
-
 
 .weather-details{
     width: 100%;
